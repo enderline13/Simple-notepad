@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), m_text(new QTextEdit), current_file("")
 {
     m_text->setFontPointSize(15);
+    m_text->setStyleSheet("font: 15pt \"Consolas\";");
     m_text->setFrameStyle(QFrame::NoFrame);
     QVBoxLayout* layout = new QVBoxLayout;
     layout->addWidget(m_text);
